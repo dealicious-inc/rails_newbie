@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # == Schema Information
 #
 # Table name: posts
@@ -19,9 +20,9 @@
 #
 class Post < ApplicationRecord
   # validation
-  validates_presence_of :title
-  validates_length_of :title, minimum: 10
-  validates_presence_of :body
+  validates :title, presence: true
+  validates :title, length: { minimum: 10 }
+  validates :body, presence: true
 
   # relations
   belongs_to :user

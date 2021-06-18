@@ -12,7 +12,7 @@ const Post = (props) => {
     <tr>
       <td>{title}</td>
       <td>{body}</td>
-      <td><button onClick={() => handleClick(id)}>삭제</button></td>
+      <td><button onClick={() => handleDelete(id)}>삭제</button></td>
     </tr>
   )
 }

@@ -1,4 +1,4 @@
 json.success true
 json.data do
-  json.token = @user.token
+  json.token @user.token
 end
